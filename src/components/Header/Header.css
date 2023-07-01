@@ -1,0 +1,114 @@
+.container {
+  max-width: 1920px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #fff;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__column {
+  padding: 26px 124px;
+}
+.item-header__logo {
+  position: relative;
+  z-index: 3;
+  flex: 0 0 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.item-header__logo img {
+  max-width: 100%;
+  display: block;
+}
+.item-header__title {
+  color: var(--gray, #4c4a5a);
+  font-size: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.item-header__text {
+  color: var(--gray, #4c4a5a);
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item-header__button {
+  color: var(--green, #44803f);
+  font-size: 13px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  padding: 12px 32px 12px 20px;
+  align-items: flex-start;
+  background: var(--yellow, #ffdb06);
+  background: linear-gradient(135deg, transparent 0px, #ffdb06 0) top left,
+    linear-gradient(-135deg, transparent 15px, #ffdb06 0) top right,
+    linear-gradient(-45deg, transparent 15px, #ffdb06 0) bottom right,
+    linear-gradient(45deg, transparent 0px, #ffdb06 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header__body {
+    height: 104px;
+  }
+  .header__logo {
+    flex: 0 0 40px;
+  }
+  .item-header__title {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .item-header__text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header__row {
+    align-items: center;
+    justify-content: center;
+    padding: 32px 30px 0px 30px;
+  }
+  .header__column {
+    flex: 0 0 25%;
+    padding: 0px 0px;
+  }
+  .item-mainblock__title {
+    color: var(--yellow, #ffdb06);
+    font-size: 36px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 36px;
+  }
+  .item-header__button {
+    display: flex;
+    padding: 12px 16px 12px 20px;
+    align-items: flex-start;
+  }
+}
